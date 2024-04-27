@@ -12,8 +12,24 @@ Such as, devolop small projects using most know script languages.
 - Treesitter
 - Lualine
 - catppuccin
+- Mason
+- Mason Lsp Config
+- Neovim Lsp Config
 
 
 ## Plugin Manager
 
 As a plugin manager, I'm using **lazy.nvim**.
+
+## LSP
+
+In this stage, I have configured the lsp for:
+
+- Lua
+- Javascript
+- Rust
+
+I had simple configuration for:
+
+- code action
+- definition

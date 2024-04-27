@@ -9,5 +9,18 @@ return {
   config = function()
     -- setting up neotree
     vim.keymap.set('n', '<C-n>', ':Neotree toggle filesystem reveal left<CR>')
+    
+    -- custom options
+    require("neo-tree").setup {
+        filesystem = {
+            filtered_items  = {
+                visible = false,
+                hide_by_name = {
+                    "bin",
+                    "obj"
+                }
+            }
+        }
+    }
   end
 }

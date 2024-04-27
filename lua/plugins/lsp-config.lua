@@ -19,8 +19,15 @@ return {
     "neovim/nvim-lspconfig",
     config = function()
       -- setting up lsp clients
-      require("lspconfig").lua_ls.setup {}
-      require("lspconfig").tsserver.setup {}
+      -- setting up lsp completion features
+      local capabilities = require('cmp_nvim_lsp').default_capabilities()
+
+      require("lspconfig").lua_ls.setup {
+        capabilities = capabilities
+      }
+      require("lspconfig").tsserver.setup {
+        capabilities = capabilities
+      }
 
       -- setting up lsp clients keybinds
       vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})

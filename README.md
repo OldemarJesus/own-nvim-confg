@@ -16,6 +16,9 @@ Such as, devolop small projects using most know script languages.
 - Mason Lsp Config
 - Neovim Lsp Config
 - None LS
+- Neovim Completion Plugins
+    - A lot of them.
+    - I'll describe here soon...
 
 
 ## Plugin Manager
